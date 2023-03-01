@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Flow">
+    <test name="Functional Test Cases">
+        <classes>
+            <class name="shaft.Setup"></class>
+            <class name="shaft.HomePagePOM"></class>
+            <class name="shaft.HomePage"></class>
+            <class name="shaft.RolesPagePOM"></class>
+            <class name="shaft.RolesPage"></class>
+            <class name="shaft.ManagerPagePOM"></class>
+            <class name="shaft.ManagerPage"></class>
+            <class name="shaft.UsersPagePOM"></class>
+            <class name="shaft.UsersPage"></class>
+<!--            <class name="com.cyber.shaft.TearDown"></class>-->
+        </classes>
+    </test>
+
+</suite>
