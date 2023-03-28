@@ -3,16 +3,16 @@
 <suite name="Main Flow">
     <test name="Functional Test Cases">
         <classes>
-            <class name="shaft.Setup"></class>
-            <class name="shaft.HomePagePOM"></class>
-            <class name="shaft.HomePage"></class>
-            <class name="shaft.RolesPagePOM"></class>
-            <class name="shaft.RolesPage"></class>
-            <class name="shaft.ManagerPagePOM"></class>
-            <class name="shaft.ManagerPage"></class>
-            <class name="shaft.UsersPagePOM"></class>
-            <class name="shaft.UsersPage"></class>
-<!--            <class name="com.cyber.shaft.TearDown"></class>-->
+            <class name="Base.Setup"></class>
+            <class name="shaft.HomePage.HomePagePOM"></class>
+            <class name="shaft.HomePage.HomePage"></class>
+            <class name="shaft.RolePage.RolesPagePOM"></class>
+            <class name="shaft.RolePage.RolesPage"></class>
+            <class name="shaft.ManagerPage.ManagerPagePOM"></class>
+            <class name="shaft.ManagerPage.ManagerPage"></class>
+            <class name="shaft.UserPage.UsersPagePOM"></class>
+            <class name="shaft.UserPage.UsersPage"></class>
+<!--            <class name="com.cyber.Base.TearDown"></class>-->
         </classes>
     </test>
 

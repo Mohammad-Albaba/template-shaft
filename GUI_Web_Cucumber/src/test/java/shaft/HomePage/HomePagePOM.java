@@ -1,4 +1,4 @@
-package shaft;
+package shaft.HomePage;
 
 import org.openqa.selenium.By;
 

@@ -1,4 +1,4 @@
-package shaft;
+package shaft.Base;
 
 import org.testng.annotations.Test;
 

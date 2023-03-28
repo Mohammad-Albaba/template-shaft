@@ -1,4 +1,4 @@
-package shaft;
+package shaft.ManagerPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

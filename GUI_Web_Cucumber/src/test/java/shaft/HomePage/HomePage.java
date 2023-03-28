@@ -1,21 +1,10 @@
-package shaft;
+package shaft.HomePage;
 
 import com.shaft.driver.SHAFT;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import io.restassured.http.ContentType;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
-
-import static shaft.Setup.setUp;
+import static shaft.Base.Setup.setUp;
 
 
 public class HomePage {
@@ -80,9 +69,9 @@ public class HomePage {
     @Test
     public void verifyThatLoginEmailSuccessfully(){
         driver1 = setUp("https://dx.cyberx.world/#/sign-in");
-        By loginItem =HomePagePOM.getEmailItem();
+        By loginItem = HomePagePOM.getEmailItem();
         driver1.element().type(loginItem, "info@cyberx.com");
-        driver1.assertThat().element(HomePagePOM.getEmailItem()).isDisabled();
+        driver1.assertThat().element(loginItem).isDisabled();
     }
 
     @Test

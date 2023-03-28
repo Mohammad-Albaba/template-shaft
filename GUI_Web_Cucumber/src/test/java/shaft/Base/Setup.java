@@ -1,4 +1,4 @@
-package shaft;
+package shaft.Base;
 
 import com.shaft.driver.SHAFT;
 import io.appium.java_client.touch.offset.ElementOption;

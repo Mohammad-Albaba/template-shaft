@@ -1,10 +1,17 @@
-package shaft;
+package shaft.Base;
+
+import com.github.javafaker.Faker;
 
 public class TestData {
- public static String TestRole="TestRole";
+    static Faker faker = new Faker();
+    public static String TestRole=faker.random().hex();
     public class ManagerData{
-         static String name="ManagerTest";
-         static String email="manager@gmail.com";
+        static String name= faker.random().hex();
+
+      //  static String name="ManagerTest";
+      static String email= faker.internet().emailAddress();
+
+        //static String email="manager@gmail.com";
          static String password="123456";
          static String nameRole="Super admin";
     }

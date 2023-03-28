@@ -1,7 +1,9 @@
-package shaft;
+package shaft.UserPage;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import shaft.Base.Setup;
+import shaft.Base.TestData;
 
 public class UsersPage {
     @Test(priority = 1)

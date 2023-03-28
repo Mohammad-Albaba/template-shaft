@@ -1,10 +1,10 @@
-package shaft;
+package shaft.RolePage;
 
-import com.shaft.driver.SHAFT;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import shaft.Base.Setup;
+import shaft.Base.TestData;
 
 public class RolesPage {
 
@@ -26,7 +26,7 @@ public class RolesPage {
     public void AddRole(){
 
         By addNameRole =RolesPagePOM.getNameRole();
-        Setup.driver.element().type(addNameRole,TestData.TestRole);
+        Setup.driver.element().type(addNameRole, TestData.TestRole);
 
         Setup.driver.assertThat().element(addNameRole).isDisabled();
 

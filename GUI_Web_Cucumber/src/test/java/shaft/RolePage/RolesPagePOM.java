@@ -1,4 +1,4 @@
-package shaft;
+package shaft.RolePage;
 
 import org.openqa.selenium.By;
 
@@ -27,7 +27,7 @@ public class RolesPagePOM {
     }
 
     static public By getSaveRoleButton(){
-        return By.xpath("//*[@id=\"form_information\"]/div[15]/div/button/span[1]");
+        return By.xpath("//*[@id=\"form_information\"]/div[16]/div/button");
     }
 
     static public By getSuccessAddRole(){

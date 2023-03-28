@@ -1,4 +1,4 @@
-package shaft;
+package shaft.UserPage;
 
 import org.openqa.selenium.By;
 
@@ -18,7 +18,6 @@ public class UsersPagePOM {
     }
 
     static public By getAddNumberUser(){
-
         return By.xpath("//*[@id=\"employee_id\"]");
     }
     static public By getAddFirstNameUser(){

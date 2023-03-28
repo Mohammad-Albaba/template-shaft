@@ -1,10 +1,10 @@
-package shaft;
+package shaft.ManagerPage;
 
-import com.shaft.driver.SHAFT;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import shaft.Base.Setup;
+import shaft.Base.TestData;
 
 public class ManagerPage {
 
@@ -25,9 +25,10 @@ public class ManagerPage {
     }
 
     @Test(priority = 3)
-    public void AddManger(){
+    public void AddManger() {
 
         By addNameManager = ManagerPagePOM.getNameManagerField();
+        Setup.driver.element().waitToBeInvisible(addNameManager);
         Setup.driver.element().type(addNameManager, TestData.ManagerData.name);
 
         By addEmailManager = ManagerPagePOM.getEmailManagerField();
